@@ -8,7 +8,9 @@ var guess = prompt("Guess a number");
 if (Number(guess) === secretNumber) {
   alert("YOU GOT IT RIGHT!");
 }
-//otherwise, you got it wrong
-else {
-  alert("WRONG!");
+//check if guess is higher or lower
+else if (Number(guess) > secretNumber) {
+  alert("Too high. Guess again!");
+} else {
+  alert("Too low. Guess again!");
 }
